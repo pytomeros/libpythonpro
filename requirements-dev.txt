@@ -13,5 +13,10 @@ packaging==21.3
 tomli==2.0.1
 attrs==21.4.0
 pyparsing==3.0.8
+
+# Coverage
+coverage==6.3.2
+pytest-cov==3.0.0
+
 -r requirements.txt
 

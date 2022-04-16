@@ -21,13 +21,16 @@ jobs:
           python-version: 3.9
 
       - name: Install dependencies
-        run: |
+        run:
           python -m pip install --upgrade pip
-          pip install -r requirements-dev.txt
+          pip install -r requirements-dev.txt codecov
 
       - name: Rodar Flake8
         run: flake8
 
-      - name: Test with pytest
-        run: pytest libpythonpro
+      - name: Test with pytest and coverage
+        run:
+           pytest libpythonpro --cov=libpythonpro
+
+
 
