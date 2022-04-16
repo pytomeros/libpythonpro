@@ -37,7 +37,7 @@ jobs:
 
       - name: Relatório coverage
         env:
-          CODECOV_TOKEN: ${{ 18611427-5a1a-48a3-8884-ddbf14b31553 }}
+          CODECOV_TOKEN: ${{ 1a0f3e8b-4fb4-412b-bacd-5b5d2d245bb9 }}
             run: |
               codecov
 
