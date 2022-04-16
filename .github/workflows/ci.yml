@@ -32,5 +32,16 @@ jobs:
         run:
            pytest libpythonpro --cov=libpythonpro
 
+      - name: Codecov
+        uses: codecov/codecov-action@v3.0.0
+
+      - name: Relatório coverage
+        env:
+          CODECOV_TOKEN: ${{ 18611427-5a1a-48a3-8884-ddbf14b31553 }}
+            run: |
+              codecov
+
+
+
 
 
