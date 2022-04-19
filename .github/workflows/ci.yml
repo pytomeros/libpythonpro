@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   pull_request:
     branches:
       - main
@@ -21,25 +22,22 @@ jobs:
           python-version: 3.9
 
       - name: Install dependencies
-        run:
-          python -m pip install --upgrade pip
-          pip install -r requirements-dev.txt codecov
+        run: |
+          pip install -q pipenv codecov
+          pipenv sync --dev
 
       - name: Rodar Flake8
-        run: flake8
+        run: pipenv run flake8
 
       - name: Test with pytest and coverage
         run:
-           pytest libpythonpro --cov=libpythonpro
+           pipenv run pytest --cov=curso-django
 
       - name: Codecov
         uses: codecov/codecov-action@v3.0.0
-
-      - name: Relatório coverage
-        env:
-          CODECOV_TOKEN: ${{ 1a0f3e8b-4fb4-412b-bacd-5b5d2d245bb9 }}
-      - run: |
-          codecov
+        with:
+          file: .coverage
+          token: 1a0f3e8b-4fb4-412b-bacd-5b5d2d245bb9
 
 
 
