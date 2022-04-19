@@ -24,6 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -q pipenv codecov
+          pipenv lock
           pipenv sync --dev
 
       - name: Rodar Flake8
