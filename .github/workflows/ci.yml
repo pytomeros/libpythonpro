@@ -34,7 +34,7 @@ jobs:
         run:
            pipenv run pytest --cov=curso-django
 
-      - name: Codecov
+      - name: todar Codecov
         uses: codecov/codecov-action@v3.0.0
         with:
           file: .coverage
