@@ -6,6 +6,7 @@ Nesse projeto é ensinado como contribuir com projetos de código aberto
 Link do curso [Python pro] (https://pythonpro.com.br/)
 
 [![Build Status](https://app.travis-ci.com/pytomeros/libpythonpro.svg?branch=main)](https://app.travis-ci.com/pytomeros/libpythonpro)
+[![codecov](https://codecov.io/gh/juliana228/libpythonpro/branch/main/graph/badge.svg?token=CM9FS47DX3)](https://codecov.io/gh/juliana228/libpythonpro)
 
 Suportada versão 3 de Python
 

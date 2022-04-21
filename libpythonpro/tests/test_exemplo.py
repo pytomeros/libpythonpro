@@ -1,5 +1,5 @@
 x = 0
 
 
-def test_meu_primeiro_teste():
-    assert x == x
+def test_int():
+    assert x == 1
