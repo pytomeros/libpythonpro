@@ -20,9 +20,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install codecov
-        pip install flake8 pytest
-        pip install -r requirements-dev.txt
+        pip install -q pipenv codecov flake8
+        pipenv sync --dev
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -31,9 +30,10 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Teste de código com pytest
       run: |
-        pytest --cov=libpythonpro
+        pipenv run pytest --cov=libpythonpro
     - name: Cobertura de testes com codecov
-      uses: codecov/codecov-action@v1
-      with:
+      env:
         token: 1a0f3e8b-4fb4-412b-bacd-5b5d2d245bb9
+      run: |
+        pipenv run codecov
    
