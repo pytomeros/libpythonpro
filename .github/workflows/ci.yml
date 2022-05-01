@@ -30,7 +30,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Teste de código com pytest
       run: |
-        pipenv run pytest --cov=libpythonpro
+        pipenv run pytest
     - name: Cobertura de testes com codecov
       env:
         token: 1a0f3e8b-4fb4-412b-bacd-5b5d2d245bb9
