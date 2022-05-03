@@ -8,6 +8,7 @@ Link do curso [Python pro] (https://pythonpro.com.br/)
 ![Python 3](https://pyup.io/repos/github/ViniciusBrag/project-django/python-3-shield.svg)
 [![Build Status](https://app.travis-ci.com/pytomeros/libpythonpro.svg?branch=main)](https://app.travis-ci.com/pytomeros/libpythonpro)
 [![codecov](https://codecov.io/gh/juliana228/libpythonpro/branch/main/graph/badge.svg?token=CM9FS47DX3)](https://codecov.io/gh/juliana228/libpythonpro)
+[![GitHub Actions](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fatrox%2Fsync-dotenv%2Fbadge&style=flat-square)](https://github.com/ViniciusBrag/project-django/actions)
 
 Suportada versão 3 de Python
 
