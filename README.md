@@ -5,6 +5,7 @@ Nesse projeto é ensinado como contribuir com projetos de código aberto
 
 Link do curso [Python pro] (https://pythonpro.com.br/)
 
+<img src="http://ForTheBadge.com/images/badges/made-with-python.svg"></a>
 [![Build Status](https://app.travis-ci.com/pytomeros/libpythonpro.svg?branch=main)](https://app.travis-ci.com/pytomeros/libpythonpro)
 [![codecov](https://codecov.io/gh/juliana228/libpythonpro/branch/main/graph/badge.svg?token=CM9FS47DX3)](https://codecov.io/gh/juliana228/libpythonpro)
 
